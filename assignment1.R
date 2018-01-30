@@ -2,7 +2,7 @@
 # This is Exercises 1. Vectors
 
 #1) Create vectors:
-
+  
 #(a) (1, 2, 3, . . . , 19, 20)
 1:20
 
@@ -30,7 +30,7 @@ x2 <- exp(x)*cos(x)
 head(x1,n=30)
 
 #3) Create vectors:
-
+  
 #(a) (0.1^3 0.2^1, 0.1^6 0.2^4, ... ,0.1^{36} 0.2{34})
 a1 <- seq(3, 36,by=3)
 a2 <- seq(1,34,by=3)
@@ -38,7 +38,7 @@ a3 <- 0.1^(a1)*0.2^(a2)
 head(a3,n=12)
 
 #(b) $(2, \frac{2^2}{2}, \frac{2^3}{3}, ... ,\frac{2^{25}}{25})$
-b1 <- c(1:25)
+  b1 <- c(1:25)
 (2^(b1))/(b1)
 
 #4) Calculate following:
@@ -61,8 +61,8 @@ paste("fn",1:30,sep="")
 
 #6) Execute the following lines which create two vectors of random integers which are chosen with replacement from the integers 0, 1, . . . , 999. Both vectors have length 250.
 set.seed(50)
-xVec <- sample(0:999,250,replace=T)
-yVec <- sample(0:999,250,replace=T)
+xVec <- sample(0:999,250,replace=True)
+yVec <- sample(0:999,250,replace=True)
 
 #(a) (y_2 - x_1, . . . , y_n - x_{n-1})
 e1 <- yVec[-1]-xVec[-length(xVec)]
